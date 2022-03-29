@@ -1,8 +1,6 @@
 name: Build and Deploy Iconic Vue PWA
 
-on:
-  push:
-    branches: [ $default-branch ]
+on: [push, workflow_dispatch]
 
 jobs:
   build:
