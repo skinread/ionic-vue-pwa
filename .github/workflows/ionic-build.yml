@@ -2,9 +2,6 @@ name: Build and Deploy Ionic Vue PWA
 
 on: [push, workflow_dispatch]
 
-env: 
-  NODE_ENV: production
-
 jobs:
   build:
     runs-on: ubuntu-latest
