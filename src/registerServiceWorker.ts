@@ -3,7 +3,8 @@
 import { register } from 'register-service-worker';
 
 if (navigator.serviceWorker) {
-  register(`${process.env.BASE_URL}service-worker.js`, {
+  register('/ionic-vue-pwa/service-worker.js', {
+    registrationOptions: { scope: '/ionic-vue-pwa/' },
     ready() {
       console.log(
         'App is being served from cache by a service worker.\n' +
