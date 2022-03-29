@@ -1,4 +1,4 @@
-name: Build and Deploy Iconic Vue PWA
+name: Build and Deploy Ionic Vue PWA
 
 on: [push, workflow_dispatch]
 
@@ -11,7 +11,7 @@ jobs:
 
     - name: Build app
       run: |
-        npm ci
+        npm ci --production
         npm run build
   
     - name: Deploy app
