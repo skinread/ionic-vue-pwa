@@ -1,3 +1,10 @@
+var APP_PATH = 'ionic-vue-pwa';
+
 module.exports = {
-  publicPath: 'ionic-vue-pwa'
+  publicPath: APP_PATH,
+  pwa: {
+    manifestOptions: {
+      start_url: APP_PATH
+    }
+  }
 }
