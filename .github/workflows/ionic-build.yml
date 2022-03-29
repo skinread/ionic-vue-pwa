@@ -2,9 +2,9 @@ name: NodeJS with Ionic
 
 on:
   push:
-    branches: [ main ]
+    branches: [ $default-branch ]
   pull_request:
-    branches: [ main ]
+    branches: [ $default-branch ]
 
 jobs:
   build:
@@ -22,3 +22,9 @@ jobs:
       run: |
         npm install
         npm run build
+        
+    - name: Commit
+      run: |
+        git add .
+        git commit -m "CI build"
+        git push origin main
