@@ -1,5 +1,6 @@
 {
   "name": "ionic-vue-pwa",
+  "id": "pwa",
   "integrations": {
     "capacitor": {}
   },
